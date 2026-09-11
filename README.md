@@ -1,6 +1,6 @@
 # ShopNest — Full-Stack E-Commerce Portfolio Project
 
-ShopNest is a professional mini-commerce application ("mini Amazon") built for a Software Development Engineer Trainee interview portfolio.
+ShopNest is a professional mini-commerce application ("mini Amazon").
 
 ## Technology
 
@@ -56,7 +56,7 @@ These accounts are created only for the local demo database:
 
 ---
 
-# Run locally on Windows (recommended for your interview)
+# Run locally on Windows 
 
 ## Prerequisites
 
@@ -134,7 +134,7 @@ For real applications, keep database passwords in User Secrets/environment varia
 
 ---
 
-# API map to explain in the interview
+# API map
 
 ## Authentication
 
@@ -219,44 +219,4 @@ React clears cart and opens tracking page
 
 ---
 
-# Interview explanation (60–90 seconds)
 
-> "ShopNest is a full-stack e-commerce application I built using React for the frontend, ASP.NET Core Web API for the backend and SQL Server through Entity Framework Core. Customers can register, authenticate, browse and filter products, maintain a cart, perform a mock checkout and track their orders. I implemented JWT authentication and role-based authorization so admin endpoints such as product management and order status updates are protected on the server. During checkout the backend reloads product information from SQL Server, validates current stock and creates the order in a transaction, rather than trusting prices or inventory sent by the client. Admins have a dashboard, product CRUD-style management and an order fulfilment workflow. This project helped me understand C#, OOP models, controllers, dependency injection, REST APIs, EF Core, SQL relationships, authentication and React state management end-to-end."
-
-## Questions this project prepares you for
-
-- What is dependency injection in ASP.NET Core?
-- What is middleware?
-- How does JWT authentication work?
-- Authentication vs authorization?
-- How is role-based authorization implemented?
-- Controller vs model vs DTO?
-- Why should the server not trust price sent by React?
-- Why use a database transaction during checkout?
-- Primary key / foreign key relationships?
-- What does EF Core do?
-- How does React communicate with ASP.NET Core?
-- What is REST?
-- GET vs POST vs PUT vs PATCH vs DELETE?
-- `useState`, `useEffect`, Context and localStorage?
-- How do you protect an admin route?
-
----
-
-# Production improvements you can mention
-
-The project intentionally keeps deployment simple for a trainee portfolio. In a production version I would add:
-
-- EF Core migrations instead of `EnsureCreated`
-- Refresh tokens / secure cookie strategy depending on deployment
-- Secret storage (Azure Key Vault / environment secrets)
-- Email verification and password recovery
-- Real payment gateway with webhooks and idempotency
-- Image upload/object storage instead of URL-only product images
-- Automated tests (xUnit + integration tests, React tests)
-- Structured logging and monitoring
-- Pagination for admin orders
-- Product reviews, wishlist and coupons
-- Cloud deployment and CI/CD
-
-That is a strong answer if an interviewer asks **"What would you improve next?"**
