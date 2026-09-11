@@ -1,0 +1,27 @@
+SHOPNEST QUICK START
+====================
+
+1) Install .NET 9 SDK, SQL Server LocalDB, Node.js 22+
+
+2) Backend terminal:
+   cd server\ShopNest.Api
+   dotnet restore
+   dotnet run --launch-profile http
+
+3) Frontend terminal:
+   cd client
+   copy .env.example .env
+   npm install
+   npm run dev
+
+4) Open http://localhost:5173
+
+DEMO ADMIN
+admin@shopnest.local
+Admin@123!
+
+DEMO CUSTOMER
+customer@shopnest.local
+Customer@123!
+
+Read README.md for architecture, APIs, Docker SQL option, and an interview-ready project explanation.
